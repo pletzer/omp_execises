@@ -12,5 +12,7 @@ if (ENABLE_OPENMP)
     add_definitions("-DHAVE_OPENMP")
 endif()
 
+enable_testing()
+
 add_subdirectory(ex2)
 
