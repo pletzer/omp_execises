@@ -22,8 +22,8 @@ int main(int argc, char** argv) {
 {
     int id = omp_get_thread_num();
     int nth = omp_get_num_threads();
-    if (threadId == 0) {
-        std::cout << "Running with " << numThreads << " threads\n";
+    if (id == 0) {
+        std::cout << "Running with " << nth << " threads\n";
     }
 }
 #endif
